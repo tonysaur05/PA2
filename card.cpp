@@ -1,7 +1,6 @@
 
 
 #include "card.h"
-using namespace std;
 
 Card::Card()
 {

@@ -2,7 +2,7 @@
 #include <cstdlib>     // Provides EXIT_SUCCESS
 #include "card.h"
 // #include "player.h"
-// #include "deck.h"
+#include "deck.h"
 
 using namespace std;
 
@@ -22,6 +22,10 @@ int main( )
   cout << "Same suit? " << card1.sameSuitAs(card2) << endl;
   cout << "Equal Rank? " << (card1 == card2) << endl;
   cout << "inEqual Rank? " << (card1 != card2) << endl;
+
+  cout << "*****************************" << endl;
+
+  Deck shinyDeck = Deck();
 
 
     // int numCards = 5;
