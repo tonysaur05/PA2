@@ -23,9 +23,17 @@ int main( )
   cout << "Equal Rank? " << (card1 == card2) << endl;
   cout << "inEqual Rank? " << (card1 != card2) << endl;
 
-  cout << "*****************************" << endl;
+  cout << "***************TESTING NEW DECK CREATION**************" << endl;
+  Deck d;
 
-  Deck shinyDeck = Deck();
+  cout << "***************SHUFFLING DECK*************************" << endl;
+  d.shuffle();
+  
+  cout << "***************DEAL OUT ALL CARDS*********************" << endl;
+  for (int i = 0; i < 52; i++)
+  {
+    d.dealCard();
+  }
 
 
     // int numCards = 5;
